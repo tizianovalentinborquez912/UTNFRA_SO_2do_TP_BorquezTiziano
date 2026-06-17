@@ -14,3 +14,37 @@
 }
 2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | PLAY RECAP **********************************************************************************************************************************************************************************************************************************
 2024-06-24 18:08:07,885 p=3444395 u=upszot n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2026-06-17 00:23:47,454 p=3862 u=vagrant n=ansible | [WARNING]: Unable to parse /home/vagrant/UTN-FRA_SO_Examenes/202406/ansible/hosts as an inventory source
+
+2026-06-17 00:23:47,454 p=3862 u=vagrant n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2026-06-17 00:23:47,461 p=3862 u=vagrant n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2026-06-17 00:23:47,638 p=3862 u=vagrant n=ansible | PLAY [all] ************************************************************************************************************************************************************************************
+2026-06-17 00:23:47,638 p=3862 u=vagrant n=ansible | skipping: no hosts matched
+2026-06-17 00:23:47,638 p=3862 u=vagrant n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************
+2026-06-17 00:25:54,237 p=3872 u=vagrant n=ansible | ERROR! the role 'configuracion' was not found in /home/vagrant/UTN-FRA_SO_Examenes/202406/ansible/roles:/tmp:/home/vagrant/UTN-FRA_SO_Examenes/202406:/home/vagrant/UTN-FRA_SO_Examenes/202406/ansible
+
+The error appears to be in '/home/vagrant/UTN-FRA_SO_Examenes/202406/ansible/playbook.yml': line 5, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  roles:
+    - configuracion
+      ^ here
+
+2026-06-17 00:30:28,494 p=3884 u=vagrant n=ansible | [WARNING]: Found both group and host with same name: localhost
+
+2026-06-17 00:30:28,664 p=3884 u=vagrant n=ansible | PLAY [localhost] ******************************************************************************************************************************************************************************
+2026-06-17 00:30:28,676 p=3884 u=vagrant n=ansible | TASK [Gathering Facts] ************************************************************************************************************************************************************************
+2026-06-17 00:30:30,354 p=3884 u=vagrant n=ansible | [WARNING]: Platform linux on host localhost is using the discovered Python interpreter at /usr/bin/python3.10, but future installation of another Python interpreter could change the meaning
+of that path. See https://docs.ansible.com/ansible-core/2.17/reference_appendices/interpreter_discovery.html for more information.
+
+2026-06-17 00:30:30,355 p=3884 u=vagrant n=ansible | ok: [localhost]
+2026-06-17 00:30:30,364 p=3884 u=vagrant n=ansible | TASK [configuracion : Renderizar datos del alumno] ********************************************************************************************************************************************
+2026-06-17 00:30:31,090 p=3884 u=vagrant n=ansible | changed: [localhost]
+2026-06-17 00:30:31,097 p=3884 u=vagrant n=ansible | TASK [configuracion : Renderizar datos del equipo] ********************************************************************************************************************************************
+2026-06-17 00:30:31,580 p=3884 u=vagrant n=ansible | changed: [localhost]
+2026-06-17 00:30:31,590 p=3884 u=vagrant n=ansible | PLAY RECAP ************************************************************************************************************************************************************************************
+2026-06-17 00:30:31,591 p=3884 u=vagrant n=ansible | localhost                  : ok=3    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
