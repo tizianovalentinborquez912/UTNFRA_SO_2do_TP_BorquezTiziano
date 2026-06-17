@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # UTN-FRA_SO_Examenes
 
 ### Modo de Uso:
@@ -52,3 +53,6 @@
     - [ ] docker      -> Archivos complementarios 
     - [ ] ansible     -> Archivos complementarios 
 
+=======
+# UTNFRA_SO_2do_TP_BorquezTiziano
+>>>>>>> bf272145d39f856547f03959f379ac7cd31aac5e
